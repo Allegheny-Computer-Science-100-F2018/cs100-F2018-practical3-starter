@@ -27,14 +27,14 @@ jar {
   manifest {
     attributes(
         'Class-Path': configurations.compile.collect { it.getName() }.join(' '),
-        'Main-Class': 'practicalfour.DisplayComplementaryDrawingCanvas'
+        'Main-Class': 'practicalthree.DisplayComplementaryDrawingCanvas'
         )
   }
 }
 
 // give the name of the application to run with "gradle run" command
 apply plugin: 'application'
-mainClassName = 'practicalfour.DisplayComplementaryDrawingCanvas'
+mainClassName = 'practicalthree.DisplayComplementaryDrawingCanvas'
 
 // perform checkstyle checking with the "gradle check" command
 apply plugin: 'checkstyle'
