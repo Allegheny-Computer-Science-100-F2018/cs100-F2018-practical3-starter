@@ -1,0 +1,23 @@
+---
+name: cmpsc-100-fall-2018-practical4
+break: true
+indent: 4
+---
+# --> check the source code for various characteristics
+# note that without an "--exact" the check is an "at least"
+src/main:
+    java:
+        practicalthree/DisplayComplementaryDrawingCanvas.java:
+            --single 10 --language Java
+            --multi 10 --language Java
+            --fragment "TODO" --count 0 --exact
+            --fragment "HORIZONTAL_ORIGIN" --count 3 --exact
+            --fragment "VERTICAL_ORIGIN" --count 2 --exact
+            --fragment "CANVAS_HEIGHT" --count 4 --exact
+            --fragment "CANVAS_WIDTH" --count 5 --exact
+            --fragment "Rectangle(" --count 2 --exact
+            --fragment "A Complementary Graphical Scene" --count 1
+# --> check the number of commits beyond a threshold
+--commits 5
+# NOTE: No terminal output checks for this program due to graphics!
+# Do not reuse this configuration for later assignments
